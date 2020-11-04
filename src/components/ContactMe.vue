@@ -14,6 +14,7 @@
           filled
           background-color="white"
           color="white"
+          :disabled="sendingEmail"
         ></v-text-field>
         <v-text-field
           v-model="contact.email"
@@ -25,6 +26,7 @@
           filled
           background-color="white"
           color="white"
+          :disabled="sendingEmail"
         ></v-text-field>
         <v-text-field
           v-model="contact.subject"
@@ -34,6 +36,7 @@
           filled
           background-color="white"
           color="white"
+          :disabled="sendingEmail"
         ></v-text-field>
         <v-textarea
           v-model="contact.message"
@@ -44,8 +47,9 @@
           solo
           filled
           background-color="white"
+          :disabled="sendingEmail"
         ></v-textarea>
-        <v-btn right class="mr-4" @click="send">
+        <v-btn right class="mr-4" @click="send" :loading="sendingEmail">
           Send
         </v-btn>
       </v-form>
@@ -76,7 +80,8 @@ export default Vue.extend({
         (v: any) => /.+@.+/.test(v) || "E-mail must be valid"
       ],
       alertMessage: "",
-      type: "success"
+      type: "success",
+      sendingEmail: false
     };
   },
   computed: {
@@ -90,6 +95,8 @@ export default Vue.extend({
         return;
       }
 
+      this.sendingEmail = true;
+
       emailjs
         .send(
           process.env.VUE_APP_SERVICE_ID,
@@ -98,10 +105,12 @@ export default Vue.extend({
           process.env.VUE_APP_USER_ID
         )
         .then(_ => {
+          this.sendingEmail = false;
           this.alertMessage = "Email successfully sent";
           this.cleanAlertMessage();
         })
         .catch(error => {
+          this.sendingEmail = false;
           console.error("FAILED...", error);
         });
     },

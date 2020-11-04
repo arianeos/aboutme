@@ -9,7 +9,7 @@
             class="mr-12"
             v-on="on"
             v-bind="attrs"
-            href="https://github.com/arianeos/aboutme/tree/master"
+            href="https://github.com/arianeos/aboutme"
             target="_blank"
           >
             <v-icon large>mdi-github</v-icon>
