@@ -1,4 +1,17 @@
-# my-resume
+# aboutme
+
+This is a VueJs application to show my experiences as a Full-stack engineer.
+
+You can access it at https://arianeoliveira.netlify.app/
+
+## Stack
+
+- TypeScript
+- VueJS
+- Vue Router
+- Vuex
+- Vuetify
+- Jest
 
 ## Project setup
 ```
@@ -10,20 +23,7 @@ yarn install
 yarn serve
 ```
 
-### Compiles and minifies for production
-```
-yarn build
-```
-
 ### Run your unit tests
 ```
 yarn test:unit
 ```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
