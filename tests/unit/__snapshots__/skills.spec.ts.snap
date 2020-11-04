@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Skills should renders the component and matches snapshot 1`] = `
+<div class="text-center my-16">
+  <h2 class="pink--text text--lighten-1 pb-12 text-h2">
+    Skills
+  </h2>
+  <v-chip-stub color="blue darken-1" large="true" activeclass="" tag="span" active="true" closeicon="$delete" filtericon="$complete" textcolor="white" class="ma-2">
+    Ruby on Rails
+  </v-chip-stub>
+  <v-chip-stub color="blue darken-1" large="true" activeclass="" tag="span" active="true" closeicon="$delete" filtericon="$complete" textcolor="white" class="ma-2">
+    Vuejs
+  </v-chip-stub>
+</div>
+`;
