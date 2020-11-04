@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Timeline should renders the component and matches snapshot 1`] = `
+<v-container-stub id="timeline-container" tag="div" fluid="true" class="pa-12">
+  <div class="text-center pa-12">
+    <v-progress-circular-stub color="purple" indeterminate="true" rotate="0" size="100" width="7" value="0"></v-progress-circular-stub>
+  </div>
+  <v-timeline-stub>
+    <v-timeline-item-stub color="pink lighten-2" filldot="true" icon="mdi-baby-carriage" large="true">
+      <v-card-stub loaderheight="4" tag="div" color="indigo lighten-2" class="elevation-2" style="color: white;">
+        <v-card-title-stub class="headline title">
+          Title 1
+        </v-card-title-stub>
+        <v-card-text-stub class="white text--primary pa-6 card-text">
+          Description 1
+        </v-card-text-stub>
+      </v-card-stub>
+    </v-timeline-item-stub>
+    <v-timeline-item-stub color="pink lighten-2" filldot="true" icon="mdi-school" large="true">
+      <v-card-stub loaderheight="4" tag="div" color="indigo lighten-2" class="elevation-2" style="color: white;">
+        <v-card-title-stub class="headline title">
+          Title 2
+        </v-card-title-stub>
+        <v-card-text-stub class="white text--primary pa-6 card-text">
+          Description 2
+        </v-card-text-stub>
+      </v-card-stub>
+    </v-timeline-item-stub>
+  </v-timeline-stub>
+</v-container-stub>
+`;

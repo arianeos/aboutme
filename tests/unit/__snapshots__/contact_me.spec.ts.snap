@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContactMe should renders the component and matches snapshot 1`] = `
+<div class="white--text indigo lighten-3 mt-12">
+  <v-container-stub tag="div" class="pa-12">
+    <alert-stub message="" type="success" style="display: none;"></alert-stub>
+    <h2 align="center" class="pb-6 text-h2">CONTACT ME</h2>
+    <v-form-stub>
+      <v-text-field-stub color="white" errorcount="1" errormessages="" messages="" rules="v => !!v || &quot;This field is required&quot;" successmessages="" value="" backgroundcolor="white" id="name" label="*Name" loaderheight="2" clearicon="$clear" filled="true" solo="true" type="text" required=""></v-text-field-stub>
+      <v-text-field-stub color="white" errorcount="1" errormessages="" messages="" rules="v => !!v || &quot;E-mail is required&quot;,v => /.+@.+/.test(v) || &quot;E-mail must be valid&quot;" successmessages="" value="" backgroundcolor="white" id="email" label="*Email" loaderheight="2" clearicon="$clear" filled="true" solo="true" type="text" required=""></v-text-field-stub>
+      <v-text-field-stub color="white" errorcount="1" errormessages="" messages="" rules="" successmessages="" value="" backgroundcolor="white" id="subject" label="Subject" loaderheight="2" clearicon="$clear" filled="true" solo="true" type="text"></v-text-field-stub>
+      <v-textarea-stub errorcount="1" errormessages="" messages="" rules="v => !!v || &quot;This field is required&quot;" successmessages="" value="" backgroundcolor="white" id="message" label="*Message" loaderheight="2" clearicon="$clear" filled="true" solo="true" type="text" rowheight="24" rows="5" required=""></v-textarea-stub>
+      <v-btn-stub tag="button" activeclass="" right="true" type="button" class="mr-4">
+        Send
+      </v-btn-stub>
+    </v-form-stub>
+  </v-container-stub>
+</div>
+`;
